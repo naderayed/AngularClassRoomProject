@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TestComponent } from './test/test.component';
 
-@NgModule({
-  declarations: [
-    AppComponent
+@NgModule({ // meta data
+  declarations: [ // list of component 
+    AppComponent,
+    TestComponent
   ],
-  imports: [
+  imports: [// 
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [],// services
+  bootstrap: [AppComponent] // first component runnig up ( at starting)
 })
 export class AppModule { }
